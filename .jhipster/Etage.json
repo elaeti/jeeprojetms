@@ -1,0 +1,36 @@
+{
+  "name": "Etage",
+  "fields": [
+    {
+      "fieldName": "numeroetage",
+      "fieldType": "Integer",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "appartement",
+      "otherEntityRelationshipName": "etage",
+      "relationshipName": "appartement"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "batiment",
+      "otherEntityRelationshipName": "etage",
+      "relationshipName": "batiment",
+      "otherEntityField": "id"
+    }
+  ],
+  "changelogDate": "20210327134603",
+  "entityTableName": "etage",
+  "dto": "no",
+  "pagination": "pagination",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": ["construction", "constructionMS"]
+}

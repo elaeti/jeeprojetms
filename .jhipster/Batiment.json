@@ -1,0 +1,29 @@
+{
+  "name": "Batiment",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "etage",
+      "otherEntityRelationshipName": "batiment",
+      "relationshipName": "etage"
+    }
+  ],
+  "changelogDate": "20210327134403",
+  "entityTableName": "batiment",
+  "dto": "no",
+  "pagination": "pagination",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": ["construction", "constructionMS"]
+}
